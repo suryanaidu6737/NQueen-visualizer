@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N-Queens Visualizer | Backtracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <h1>👑 N-Queens Visualizer</h1>
+
+    <!-- Controls -->
+    <div class="controls card">
+
+        <div class="control-group">
+            <label>N (4–12)</label>
+            <input type="number" id="nInput" min="4" max="12" value="8">
+        </div>
+
+        <div class="control-group">
+            <button onclick="start()">Start</button>
+            <button onclick="pause()">Pause</button>
+            <button onclick="resume()">Resume</button>
+            <button onclick="stopExecution()">Stop</button>
+            <button onclick="resetBoard()">Reset</button>
+        </div>
+
+        <div class="control-group">
+            <label>Speed</label>
+            <input type="range" id="speedSlider" min="0" max="590" value="200">
+        </div>
+
+    </div>
+
+    <div class="main-container">
+
+        <!-- Left Stats -->
+        <div class="stats card">
+            <h2>📊 Statistics</h2>
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Placements: <span id="placements">0</span></p>
+            <p>Rejections: <span id="rejections">0</span></p>
+            <p>Backtracks: <span id="backtracks">0</span></p>
+            <p>Solutions: <span id="solutions">0</span></p>
+            <p>Execution Time: <span id="time">0</span> ms</p>
+        </div>
+
+        <!-- Board -->
+        <div id="board" class="card"></div>
+
+        <!-- Solutions -->
+        <div class="solutions-section card">
+            <h2>🧠 Solutions</h2>
+            <div id="solutionList"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

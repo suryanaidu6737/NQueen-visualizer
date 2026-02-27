@@ -1,0 +1,167 @@
+/* ===== Base Setup ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    overflow-x: hidden;
+}
+
+.app-container {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0 15px 0;
+    font-size: 28px;
+}
+
+/* ===== Glass Card ===== */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* ===== Controls ===== */
+.controls {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input, button {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* ===== Layout ===== */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.stats,
+.solutions-section {
+    width: 22%;
+    text-align: left;
+    max-height: 70vh;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+/* ===== Responsive Board Fix ===== */
+#board {
+    width: min(70vh, 90vw);
+    height: min(70vh, 90vw);
+    display: grid;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* ===== Cells ===== */
+.cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(16px, 2vw, 28px);
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.white { background-color: #f0d9b5; }
+.black { background-color: #b58863; }
+
+/* ===== States ===== */
+.try { background-color: #ffd700 !important; }
+.reject { background-color: #ff4d4d !important; }
+
+/* Round Queen */
+.placed::after {
+    content: "♛";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: radial-gradient(circle, #00ff99, #00cc88);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(18px, 2.5vw, 30px);
+    color: black;
+    animation: pop 0.2s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.6); }
+    100% { transform: scale(1); }
+}
+
+.solution-highlight {
+    background-color: #00e6ff !important;
+}
+
+/* ===== Solution Cards ===== */
+.solution-card {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.solution-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+.solution-card.active {
+    border: 1px solid #00e6ff;
+    background: rgba(0,230,255,0.2);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats,
+    .solutions-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
