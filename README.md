@@ -1,82 +1,81 @@
-# 👑 N-Queens Visualizer
+👑 N-Queens Visualizer
 
-An interactive web-based visualizer that demonstrates how the **Backtracking Algorithm** solves the classic **N-Queens Problem** step-by-step.
+An interactive web-based visualization that demonstrates how the Backtracking Algorithm solves the classic N-Queens Problem step-by-step.
 
-This project allows users to see how queens are placed on a chessboard while avoiding conflicts in rows, columns, and diagonals.
+This project allows users to observe how queens are placed on a chessboard while avoiding conflicts in rows, columns, and diagonals.
 
----
+📌 Problem Statement
 
-## 📌 Problem Statement
+The N-Queens Problem asks:
 
-The **N-Queens Problem** asks:
+Place N queens on an N × N chessboard so that no two queens attack each other.
 
-> Place **N queens** on an **N × N chessboard** so that **no two queens attack each other**.
+This means:
 
-That means:
-- No two queens share the same **row**
-- No two queens share the same **column**
-- No two queens share the same **diagonal**
+No two queens share the same row
 
-The solution is typically implemented using a **Backtracking algorithm**.
+No two queens share the same column
 
----
+No two queens share the same diagonal
 
-## 🚀 Features
+The problem is typically solved using the Backtracking algorithm, which tries possible placements and backtracks when a conflict occurs.
 
-✔ Interactive chessboard visualization  
-✔ Real-time **queen placement animation**  
-✔ **Backtracking visualization** when a conflict occurs  
-✔ Adjustable **algorithm speed**  
-✔ **Pause / Resume / Stop** execution  
-✔ **Statistics panel** showing:
-- Attempts
-- Placements
-- Rejections
-- Backtracks
-- Total Solutions
-- Execution Time  
+🚀 Features
 
-✔ **Solution cards** displaying each valid solution  
-✔ Click any solution card to **display that solution on the board**
+✔ Interactive chessboard visualization
+✔ Real-time queen placement animation
+✔ Backtracking visualization when conflicts occur
+✔ Adjustable algorithm speed
+✔ Pause / Resume / Stop execution controls
 
----
+✔ Statistics panel displaying:
 
-## 🖥️ Technologies Used
+Attempts
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (ES6)**
-- DOM Manipulation
-- Async / Await animations
+Placements
 
----
+Rejections
 
-## 📂 Project Structure
+Backtracks
 
+Total Solutions
 
-nqueens-visualizer/
+Execution Time
+
+✔ Solution cards displaying every valid solution
+✔ Click any solution card to display that solution on the board
+
+🖥️ Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript (ES6)
+
+DOM Manipulation
+
+Async / Await animations
+
+📂 Project Structure
+nqueens-visualizer
 │
-├── index.html # Main UI
-├── style.css # Styling and animations
-└── script.js # Backtracking logic and visualization
-
-
----
-
-## ▶️ How to Run the Project
-
-1. Clone the repository
-
-```bash
+├── index.html    # Main UI
+├── style.css     # Styling and animations
+├── script.js     # Backtracking logic and visualization
+└── snapshot.png  # Project screenshot
+▶️ How to Run the Project
+1️⃣ Clone the repository
 git clone https://github.com/suryanaidu6737/nqueens-visualizer.git
+2️⃣ Open the project folder
+cd nqueens-visualizer
+3️⃣ Run the project
 
-Open the folder
-
-Run the project by opening
+Simply open:
 
 index.html
 
-Or use Live Server in VS Code.
+You can also run it using Live Server in VS Code.
 
 🎮 How to Use
 
@@ -87,25 +86,22 @@ Click Start to begin solving.
 Use the controls:
 
 Pause – temporarily stop the algorithm
-
 Resume – continue solving
-
 Stop – terminate execution
-
 Reset – clear the board
 
 Adjust the speed slider to control animation speed.
 
-Click any solution card to view that solution on the board.
+Click any solution card to display that solution on the board.
 
 📊 Example Output
 
-Example solution for N = 4:
+Example solutions for N = 4:
 
 (2, 4, 1, 3)
 (3, 1, 4, 2)
 
-Each number represents the column position of a queen in each row.
+Each number represents the column position of the queen in each row.
 
 💡 Concepts Demonstrated
 
@@ -122,9 +118,9 @@ DOM Manipulation
 Asynchronous JavaScript
 
 📸 Preview
-
-![Board Visualization](snapshot.png)
-
+<p align="center">
+  <img src="snapshot.png" width="700">
+</p>
 🔮 Future Improvements
 
 Step-by-step trace mode
@@ -133,7 +129,7 @@ Solution replay animation
 
 Dark / Light theme
 
-Mobile optimized UI
+Mobile-optimized UI
 
 Algorithm complexity visualization
 
