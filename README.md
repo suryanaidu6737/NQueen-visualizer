@@ -123,8 +123,7 @@ Asynchronous JavaScript
 
 📸 Preview
 
-<img width="1919" height="880" alt="preview image" src="http://github.com/suryanaidu6737/NQueen-visualizer/blob/main/snapshot.png" />
-
+![Board Visualization](snapshot.png)
 
 🔮 Future Improvements
 
