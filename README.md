@@ -123,7 +123,7 @@ Asynchronous JavaScript
 
 📸 Preview
 
-<img width="1919" height="880" alt="Screenshot 2026-03-10 201704" src="https://github.com/user-attachments/assets/76259910-dfe4-4a2c-8547-404bdd69b893" />
+<img width="1919" height="880" alt="preview image" src="http://github.com/suryanaidu6737/NQueen-visualizer/blob/main/snapshot.png" />
 
 
 🔮 Future Improvements
